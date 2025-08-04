@@ -13,17 +13,17 @@
   <body>
     <%- include('./layout/header'); -%>
     <div class="bg-gray">
-      <div class="container py-80">
+      <div class="container-lg py-80">
         <div class="row">
-          <div class="col-10 mx-auto">
+          <div class="col-12 col-lg-10 mx-auto">
             <ul
               class="nav nav-pills mb-4 justify-content-center"
               id="pills-tab"
               role="tablist"
             >
-              <li class="nav-item me-3" role="presentation">
+              <li class="nav-item me-3 me-lg-4" role="presentation">
                 <button
-                  class="nav-link d-flex align-items-center active"
+                  class="nav-link d-flex align-items-center active p-12 px-lg-20 fs-14"
                   id="pills-userdata-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-userdata"
@@ -32,13 +32,13 @@
                   aria-controls="pills-userdata"
                   aria-selected="true"
                 >
-                  <span class="material-icons-outlined me-1"> face </span
+                  <span class="material-icons-outlined me-lg-1"> face </span
                   >個人資料
                 </button>
               </li>
-              <li class="nav-item me-3" role="presentation">
+              <li class="nav-item me-3 me-lg-4" role="presentation">
                 <button
-                  class="nav-link d-flex align-items-center"
+                  class="nav-link d-flex align-items-center p-12 px-lg-20 fs-14"
                   id="pills-reserve-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-reserve"
@@ -47,14 +47,14 @@
                   aria-controls="pills-reserve"
                   aria-selected="false"
                 >
-                  <span class="material-icons-outlined me-1">
+                  <span class="material-icons-outlined me-lg-1">
                     pending_actions </span
                   >預約紀錄
                 </button>
               </li>
               <li class="nav-item" role="presentation">
                 <button
-                  class="nav-link d-flex align-items-center"
+                  class="nav-link d-flex align-items-center p-12 px-lg-20 fs-14"
                   id="pills-plan-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#pills-plan"
@@ -63,7 +63,7 @@
                   aria-controls="pills-plan"
                   aria-selected="false"
                 >
-                  <span class="material-icons-outlined me-1"> list_alt </span
+                  <span class="material-icons-outlined me-lg-1"> list_alt </span
                   >職旅計劃
                 </button>
               </li>
@@ -76,263 +76,268 @@
                 aria-labelledby="pills-userdata-tab"
               >
                 <!-- 個人資料頁面 -->
-                <div class="p-5 bg-light rounded shadow">
-                  <form>
-                    <!-- 個人資料 -->
-                    <div class="d-flex">
-                      <!-- 左側box -->
-                      <div class="me-3 w-300 flex-shrink-0">
-                        <p class="fs-4 fw-medium lh-sm">個人資料</p>
-                      </div>
-                      <!-- 右側box -->
-                      <div class="w-100">
-                        <!-- 更新頭貼 -->
-                        <div class="mb-4">
-                          <!-- 附加檔案 -->
-                          <div class="mb-4 d-flex align-items-end">
-                            <div>
-                              <img
-                                src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week5/avatar.png?raw=true"
-                                alt="user-img"
-                                class="rounded-circle"
-                              />
-                            </div>
-                            <div>
-                              <label for="fileupload" class="btn border">
-                                <div class="d-flex align-items-center">
-                                  <span class="material-icons-outlined me-1">
-                                    file_upload </span
-                                  >上傳檔案
-                                </div></label
-                              >
-                              <input
-                                type="file"
-                                name="fileupload"
-                                id="fileupload"
-                                class="d-none"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <!-- 姓名 -->
-                        <div class="mb-4">
-                          <div class="form-floating mb-3">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="name"
-                              placeholder="姓名"
+                <div class="p-4 p-lg-5 bg-light rounded-4 shadow">
+                  <!-- <form>-->
+                  <!-- 個人資料 -->
+                  <div class="d-flex">
+                    <!-- 左側box -->
+                    <div class="me-3 w-300 flex-shrink-0 d-none d-lg-flex">
+                      <p class="fs-4 fw-medium lh-sm">個人資料</p>
+                    </div>
+                    <!-- 右側box -->
+                    <div class="w-100 mb-4 mb-lg-0">
+                      <!-- 更新頭貼 -->
+                      <div class="mb-3 mb-lg-4">
+                        <p
+                          class="mb-3 fs-4 fw-medium lh-sm d-sm-flex d-lg-none"
+                        >
+                          個人資料
+                        </p>
+                        <!-- 附加檔案 -->
+                        <div class="mb-4 d-flex align-items-end">
+                          <div>
+                            <img
+                              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week5/avatar.png?raw=true"
+                              alt="user-img"
+                              class="rounded-circle"
                             />
-                            <label for="name">姓名</label>
                           </div>
-                        </div>
-                        <!-- 性別 -->
-                        <div class="mb-4">
-                          <p class="mb-2">性別</p>
-                          <div class="px-2">
-                            <div class="form-check form-check-inline me-4 mb-2">
-                              <input
-                                class="form-check-input"
-                                type="radio"
-                                name="gender-group"
-                                id="gender-1"
-                                value="gender-1"
-                                checked
-                              />
-                              <label class="form-check-label" for="gender-1"
-                                >女性</label
-                              >
-                            </div>
-                            <div class="form-check form-check-inline me-4 mb-2">
-                              <input
-                                class="form-check-input"
-                                type="radio"
-                                name="gender-group"
-                                id="gender-2"
-                                value="gender-2"
-                              />
-                              <label class="form-check-label" for="gender-2"
-                                >男性</label
-                              >
-                            </div>
-                            <div class="form-check form-check-inline me-4 mb-2">
-                              <input
-                                class="form-check-input"
-                                type="radio"
-                                name="gender-group"
-                                id="gender-3"
-                                value="gender-3"
-                              />
-                              <label class="form-check-label" for="gender-3"
-                                >不願透露</label
-                              >
-                            </div>
-                          </div>
-                        </div>
-                        <!-- 生日 -->
-                        <div class="mb-4">
-                          <div class="form-floating mb-3">
-                            <input
-                              type="date"
-                              class="form-control"
-                              id="birthday"
-                              placeholder="生日"
-                            />
-                            <label for="birthday">生日</label>
-                          </div>
-                        </div>
-                        <!-- 密碼 -->
-                        <div class="mb-4">
-                          <p class="mb-2">密碼</p>
-                          <button
-                            type="button"
-                            class="btn btn-light border rounded-pill me-4 d-flex align-items-center"
-                            data-bs-toggle="modal"
-                            data-bs-target="#staticBackdrop"
-                          >
-                            修改密碼<span class="material-icons-outlined">
-                              chevron_right
-                            </span>
-                          </button>
-
-                          <!-- 彈出視窗 -->
-                          <div
-                            class="modal fade"
-                            id="staticBackdrop"
-                            data-bs-backdrop="static"
-                            data-bs-keyboard="false"
-                            tabindex="-1"
-                            aria-labelledby="staticBackdropLabel"
-                            aria-hidden="true"
-                          >
-                            <div
-                              class="modal-dialog modal-dialog modal-dialog-centered"
+                          <div>
+                            <label for="fileupload" class="btn border">
+                              <div class="d-flex align-items-center fs-14">
+                                <span class="material-icons-outlined me-1">
+                                  file_upload </span
+                                >上傳檔案
+                              </div></label
                             >
-                              <!-- 彈出內容 -->
-                              <div class="modal-content">
-                                <!-- header -->
-                                <div class="modal-header">
-                                  <h5
-                                    class="modal-title"
-                                    id="staticBackdropLabel"
-                                  >
-                                    更新密碼
-                                  </h5>
-                                  <button
-                                    type="button"
-                                    class="btn-close"
-                                    data-bs-dismiss="modal"
-                                    aria-label="Close"
-                                  ></button>
-                                </div>
-                                <!-- body -->
-                                <div class="modal-body">
-                                  <!-- 新密碼 -->
-                                  <div class="mb-4">
-                                    <div class="form-floating mb-3">
-                                      <input
-                                        type="password"
-                                        class="form-control"
-                                        id="newpassword"
-                                        placeholder="新密碼"
-                                      />
-                                      <label for="newpassword">新密碼</label>
-                                    </div>
+                            <input
+                              type="file"
+                              name="fileupload"
+                              id="fileupload"
+                              class="d-none"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 姓名 -->
+                      <div class="mb-3 mb-lg-4">
+                        <div class="form-floating mb-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="name"
+                            placeholder="姓名"
+                          />
+                          <label for="name">姓名</label>
+                        </div>
+                      </div>
+                      <!-- 性別 -->
+                      <div class="mb-3 mb-lg-4">
+                        <p class="mb-2 fs-14">性別</p>
+                        <div class="px-2">
+                          <div class="form-check form-check-inline me-4 mb-2">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="gender-group"
+                              id="gender-1"
+                              value="gender-1"
+                              checked
+                            />
+                            <label class="form-check-label fs-14" for="gender-1"
+                              >女性</label
+                            >
+                          </div>
+                          <div class="form-check form-check-inline me-4 mb-2">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="gender-group"
+                              id="gender-2"
+                              value="gender-2"
+                            />
+                            <label class="form-check-label fs-14" for="gender-2"
+                              >男性</label
+                            >
+                          </div>
+                          <div class="form-check form-check-inline me-4 mb-2">
+                            <input
+                              class="form-check-input"
+                              type="radio"
+                              name="gender-group"
+                              id="gender-3"
+                              value="gender-3"
+                            />
+                            <label class="form-check-label fs-14" for="gender-3"
+                              >不願透露</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <!-- 生日 -->
+                      <div class="mb-3 mb-lg-4">
+                        <div class="form-floating mb-3">
+                          <input
+                            type="date"
+                            class="form-control"
+                            id="birthday"
+                            placeholder="生日"
+                          />
+                          <label for="birthday">生日</label>
+                        </div>
+                      </div>
+                      <!-- 密碼 -->
+                      <div class="mb-3 mb-lg-4">
+                        <p class="mb-2 fs-14">密碼</p>
+                        <button
+                          type="button"
+                          class="btn btn-light border rounded-pill me-4 d-flex align-items-center"
+                          data-bs-toggle="modal"
+                          data-bs-target="#staticBackdrop"
+                        >
+                          修改密碼<span class="material-icons-outlined">
+                            chevron_right
+                          </span>
+                        </button>
+
+                        <!-- 彈出視窗 -->
+                        <div
+                          class="modal fade"
+                          id="staticBackdrop"
+                          data-bs-backdrop="static"
+                          data-bs-keyboard="false"
+                          tabindex="-1"
+                          aria-labelledby="staticBackdropLabel"
+                          aria-hidden="true"
+                        >
+                          <div
+                            class="modal-dialog modal-dialog modal-dialog-centered"
+                          >
+                            <!-- 彈出內容 -->
+                            <div class="modal-content">
+                              <!-- header -->
+                              <div class="modal-header">
+                                <h5
+                                  class="modal-title"
+                                  id="staticBackdropLabel"
+                                >
+                                  更新密碼
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <!-- body -->
+                              <div class="modal-body">
+                                <!-- 新密碼 -->
+                                <div class="mb-4">
+                                  <div class="form-floating mb-3">
+                                    <input
+                                      type="password"
+                                      class="form-control"
+                                      id="newpassword"
+                                      placeholder="新密碼"
+                                    />
+                                    <label for="newpassword">新密碼</label>
                                   </div>
-                                  <!-- 再次密碼 -->
-                                  <div class="mb-4">
-                                    <div class="form-floating mb-3">
-                                      <input
-                                        type="password"
-                                        class="form-control"
-                                        id="checkpassword"
-                                        placeholder="再次密碼"
-                                      />
-                                      <label for="checkpassword"
-                                        >再次密碼</label
-                                      >
-                                    </div>
+                                </div>
+                                <!-- 再次密碼 -->
+                                <div class="mb-4">
+                                  <div class="form-floating mb-3">
+                                    <input
+                                      type="password"
+                                      class="form-control"
+                                      id="checkpassword"
+                                      placeholder="再次密碼"
+                                    />
+                                    <label for="checkpassword">再次密碼</label>
                                   </div>
                                 </div>
-                                <!-- footer -->
-                                <div class="modal-footer">
-                                  <button
-                                    type="button"
-                                    class="btn btn-dark rounded-pill d-flex align-items-center"
+                              </div>
+                              <!-- footer -->
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-dark rounded-pill d-flex align-items-center"
+                                >
+                                  更新密碼<span
+                                    class="material-icons-outlined ms-1"
                                   >
-                                    更新密碼<span
-                                      class="material-icons-outlined ms-1"
-                                    >
-                                      chevron_right
-                                    </span>
-                                  </button>
-                                </div>
+                                    chevron_right
+                                  </span>
+                                </button>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <!-- 信箱 -->
-                        <div class="mb-4">
-                          <div class="form-floating mb-3">
-                            <input
-                              type="email"
-                              class="form-control"
-                              id="mail"
-                              placeholder="信箱"
-                            />
-                            <label for="mail">信箱</label>
-                            <span class="px-2 text-secondary fs-sm"
-                              >盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</span
-                            >
-                          </div>
+                      </div>
+                      <!-- 信箱 -->
+                      <div class="mb-3 mb-lg-4">
+                        <div class="form-floating mb-3">
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="mail"
+                            placeholder="信箱"
+                          />
+                          <label for="mail">信箱</label>
+                          <span class="fs-lg-14 px-2 text-secondary"
+                            >盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</span
+                          >
                         </div>
-                        <!-- 電話 -->
-                        <div class="mb-4">
-                          <div class="form-floating mb-3">
-                            <input
-                              type="tel"
-                              class="form-control"
-                              id="tel"
-                              placeholder="電話"
-                            />
-                            <label for="tel">電話</label>
-                          </div>
+                      </div>
+                      <!-- 電話 -->
+                      <div class="mb-3 mb-lg-4">
+                        <div class="form-floating mb-3">
+                          <input
+                            type="tel"
+                            class="form-control"
+                            id="tel"
+                            placeholder="電話"
+                          />
+                          <label for="tel">電話</label>
                         </div>
-                        <!-- 通訊地址 -->
-                        <div class="mb-5">
-                          <div class="form-floating mb-3">
-                            <input
-                              type="text"
-                              class="form-control"
-                              id="address"
-                              placeholder="通訊地址"
-                            />
-                            <label for="address">通訊地址</label>
-                          </div>
+                      </div>
+                      <!-- 通訊地址 -->
+                      <div class="mb-56 mb-lg-5">
+                        <div class="form-floating mb-3">
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="address"
+                            placeholder="通訊地址"
+                          />
+                          <label for="address">通訊地址</label>
                         </div>
                       </div>
                     </div>
-                    <!-- 按鈕 -->
-                    <div class="d-flex justify-content-center">
-                      <button
-                        type="button"
-                        class="btn btn-light border rounded-pill me-4 d-flex align-items-center"
-                      >
-                        重新填寫<span class="material-icons-outlined">
-                          chevron_right
-                        </span>
-                      </button>
-                      <button
-                        type="button"
-                        class="btn btn-dark rounded-pill d-flex align-items-center"
-                      >
-                        儲存更新
-                        <span class="material-icons-outlined ms-1">
-                          chevron_right
-                        </span>
-                      </button>
-                    </div>
-                  </form>
+                  </div>
+                  <!-- 按鈕 -->
+                  <div
+                    class="d-flex flex-column-reverse flex-lg-row justify-content-center"
+                  >
+                    <button
+                      type="button"
+                      class="btn btn-light border rounded-4 w-lg-100 me-lg-4 d-flex align-items-center justify-content-center fs-14 py-12 ps-20 pe-12"
+                    >
+                      重新填寫<span class="material-icons-outlined">
+                        chevron_right
+                      </span>
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-dark rounded-4 w-lg-100 d-flex align-items-center justify-content-center fs-14 py-12 mb-3 mb-lg-0 ps-20 pe-12"
+                    >
+                      儲存更新
+                      <span class="material-icons-outlined ms-1">
+                        chevron_right
+                      </span>
+                    </button>
+                  </div>
+                  <!-- </form> -->
                 </div>
               </div>
               <div
@@ -342,7 +347,7 @@
                 aria-labelledby="pills-reserve-tab"
               >
                 <!-- 預約紀錄頁面 -->
-                <div class="p-5 bg-light rounded shadow">
+                <div class="p-5 bg-light rounded-4 shadow">
                   <form>
                     <!-- 預約紀錄 -->
                     <div>
@@ -492,7 +497,7 @@
                 aria-labelledby="pills-plan-tab"
               >
                 <!-- 職旅計劃頁面 -->
-                <div class="p-5 bg-light rounded shadow">
+                <div class="p-5 bg-light rounded-4 shadow">
                   <form>
                     <!-- 職旅計畫概況 -->
                     <div class="d-flex border-bottom">
