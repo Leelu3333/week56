@@ -1,0 +1,21 @@
+.fs-lg-14 {
+  font-size: 14px;
+}
+.fs-18 {
+  font-size: 18px;
+}
+.chinese-trad {
+  list-style-type: trad-chinese-informal;
+}
+
+@media (max-width: 992px) {
+  .fs-14 {
+    font-size: 14px;
+  }
+  .fs-28 {
+    font-size: 28px;
+  }
+  .w-lg-100 {
+    width: 100%;
+  }
+}

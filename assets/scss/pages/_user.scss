@@ -1,27 +1,9 @@
 .w-300 {
   width: 300px;
 }
-.fs-lg-14 {
-  font-size: 14px;
-}
 .dropdown-toggle::after {
   display: none !important;
 }
 .bg-gray-400 {
   background-color: $gray-400;
-}
-@media (max-width: 992px) {
-  .fs-14 {
-    font-size: 14px;
-  }
-  .fs-28 {
-    font-size: 28px;
-  }
-  .w-lg-100 {
-    width: 100%;
-  }
-  .py-80 {
-    padding-top: 80px;
-    padding-bottom: 80px;
-  }
 }
