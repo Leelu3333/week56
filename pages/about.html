@@ -5,730 +5,343 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
-    <title>個人資料</title>
+    <title>關於職旅</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
-    <div class="bg-gray">
-      <div class="container-lg py-5 py-lg-80">
+    <!-- 關於職旅 -->
+    <div class="about-banner-img text-center position-relative">
+      <div class="container-lg">
         <div class="row">
-          <div class="col-12 col-lg-10 mx-auto">
-            <div class="h3 fw-bold mb-3 mb-lg-4 text-center">聯絡我們</div>
-            <div class="text-secondary text-center mb-4 mb-lg-5">
-              每一封郵件，我們都會親自回覆。每一通電話，都是新可能的開始。
+          <div class="col-lg-8 mx-auto">
+            <p class="h2 fw-bold mb-4 mb-lg-5">關於職旅</p>
+            <p class="text-secondary">
+              職旅 WorkWay
+              匯集了來自不同領域、擁有豐富實戰經驗的自由工作者與數位遊牧專家。根據你的需求和階段，我們提供一對一諮詢。
+            </p>
+            <p class="text-secondary">
+              無論你是剛開始探索期，還是已在轉型路上遇到瓶頸，我們都能提供適合你的專業指導。
+            </p>
+            <div class="position-absolute banner-person-img">
+              <img
+                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week6/service/banner-person.svg"
+                alt="banner-person"
+              />
             </div>
-            <!-- 基本資料頁面 -->
-            <div class="p-4 p-lg-5 bg-light rounded-4 shadow">
-              <form>
-                <!-- 基本資料概況 -->
-                <div class="d-flex border-bottom">
-                  <!-- 左側box -->
-                  <div
-                    class="me-3 w-300 flex-shrink-0 d-none d-lg-flex flex-lg-column"
-                  >
-                    <p class="mb-3 fs-4 fw-medium lh-sm">基本資料</p>
-                    <p class="text-secondary">
-                      欄位皆為<span
-                        class="badge rounded-pill bg-danger ms-1 fs-lg-14"
-                        >必填</span
-                      >
-                    </p>
-                  </div>
-                  <!-- 右側box -->
-                  <div class="w-100">
-                    <!-- 目前職業狀態 -->
-                    <div class="mb-3 mb-lg-4">
-                      <div
-                        class="mb-3 d-flex align-items-center justify-content-between d-lg-none"
-                      >
-                        <p class="fs-4 lh-sm">基本資料</p>
-                        <p class="text-secondary fs-14">
-                          欄位皆為<span
-                            class="badge rounded-pill bg-danger ms-1 fs-lg-14"
-                            >必填</span
-                          >
-                        </p>
-                      </div>
-                      <!-- 姓名 -->
-                      <div class="mb-3 mb-lg-4">
-                        <div class="form-floating mb-3">
-                          <input
-                            type="text"
-                            class="form-control"
-                            id="name"
-                            placeholder="姓名"
-                          />
-                          <label for="name">姓名</label>
-                        </div>
-                      </div>
-                      <!-- 信箱 -->
-                      <div class="mb-3 mb-lg-4">
-                        <div class="form-floating mb-3">
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="mail"
-                            placeholder="信箱"
-                          />
-                          <label for="mail">信箱</label>
-                          <p class="fs-lg-14 px-2 text-secondary">
-                            盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信
-                          </p>
-                        </div>
-                      </div>
-                      <!-- 電話 -->
-                      <div class="mb-3 mb-lg-4">
-                        <div class="form-floating mb-3">
-                          <input
-                            type="tel"
-                            class="form-control"
-                            id="tel"
-                            placeholder="電話"
-                          />
-                          <label for="tel">電話</label>
-                          <p class="fs-lg-14 px-2 text-secondary">
-                            我們不會以電話主動聯繫您，告知您要至ATM操作轉帳
-                          </p>
-                        </div>
-                      </div>
-                      <!-- 目前職業/工作身分 -->
-                      <div class="mb-3 mb-lg-4">
-                        <select
-                          class="form-select py-3"
-                          aria-label="Default select example"
-                        >
-                          <option selected>目前職業/工作身分</option>
-                          <option value="1">全職上班族</option>
-                          <option value="2">兼職工作者</option>
-                          <option value="3">自由工作者/接案者</option>
-                          <option value="4">創業者/企業主</option>
-                          <option value="5">其他</option>
-                        </select>
-                      </div>
-                    </div>
-                  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 精實的職旅夥伴 -->
+    <div class="container-lg">
+      <div>
+        <div class="text-center pt-5">
+          <p class="h3 fw-bold mb-3">精實的職旅夥伴</p>
+          <p class="text-secondary mb-4">
+            我們相信，最好的指導來自於那些已經走過你想走的路，並願意伸出手拉你一把的人。
+          </p>
+        </div>
+        <div class="swiper mySwiper mb-4">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card h-100 rounded-4 overflow-hidden">
+                <div class="card-img-top p-0">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/mentor-1.png?raw=true"
+                    alt="partner-1"
+                    height="400"
+                    class="w-100 object-fit-cover"
+                  />
                 </div>
-                <!-- 諮詢需求 -->
-                <div class="d-flex border-bottom pt-4 pt-lg-5">
-                  <!-- 左側box -->
-                  <div
-                    class="me-3 w-300 flex-shrink-0 d-none d-lg-flex flex-lg-column"
-                  >
-                    <p class="mb-3 fs-4 fw-medium lh-sm">諮詢需求</p>
-                    <p class="text-secondary">
-                      欄位皆為<span
-                        class="badge rounded-pill bg-danger ms-1 fs-lg-14"
-                        >必填</span
-                      >
-                    </p>
-                  </div>
-                  <!-- 右側box -->
-                  <div>
-                    <div
-                      class="mb-3 d-flex align-items-center justify-content-between d-lg-none"
+                <div class="card-body">
+                  <h4 class="fs-14 mb-2 text-secondary">數位遊牧先驅</h4>
+                  <h3 class="fs-4 fw-medium mb-3">陳志遠 Ethan Chen</h3>
+                  <div class="d-flex flex-wrap pb-4">
+                    <a
+                      href="#"
+                      class="fs-14 text-secondary border rounded-pill px-2 py-1 me-2"
+                      ># 遠端工作策略</a
                     >
-                      <p class="fs-4 lh-sm">諮詢需求</p>
-                      <p class="text-secondary fs-14">
-                        欄位皆為<span
-                          class="badge rounded-pill bg-danger ms-1 fs-lg-14"
-                          >必填</span
-                        >
-                      </p>
-                    </div>
-                    <!-- 諮詢主題 -->
-                    <div class="mb-3 mb-lg-4">
-                      <p class="mb-2 fs-14">諮詢主題</p>
-                      <div class="px-lg-2 mb-2">
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-1"
-                            value="fields-1"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-1"
-                          >
-                            職涯探索與方向</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-2"
-                            value="fields-2"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-2"
-                            >接案與技能變現</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-3"
-                            value="fields-3"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-3"
-                            >品牌與內容經營</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-4"
-                            value="fields-4"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-4"
-                            >遠端工作與數位游牧</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-5"
-                            value="fields-5"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-5"
-                            >收入與時間管理</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-6"
-                            value="fields-6"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-6"
-                          >
-                            其他（請填寫下題）</label
-                          >
-                        </div>
-                      </div>
-                      <p class="fs-lg-14 px-2 text-secondary">
-                        可複選，讓我們更了解你的狀況，安排最適合的顧問與建議。
-                      </p>
-                    </div>
-                    <!-- 期望諮詢的專家 -->
-                    <div class="mb-3 mb-lg-4">
-                      <select
-                        class="form-select py-3"
-                        aria-label="Default select example"
-                      >
-                        <option selected>期望諮詢的專家</option>
-                        <option value="1">全職上班族</option>
-                        <option value="2">兼職工作者</option>
-                        <option value="3">自由工作者/接案者</option>
-                        <option value="4">創業者/企業主</option>
-                        <option value="5">其他</option>
-                      </select>
-                    </div>
-                    <!-- 您目前面臨的主要挑戰 -->
-                    <div class="mb-3 mb-lg-4">
-                      <div class="form-floating">
-                        <textarea
-                          class="form-control"
-                          placeholder="您目前面臨的主要挑戰"
-                          id="professional-background"
-                          style="height: 160px"
-                          maxlength="300"
-                        ></textarea>
-                        <label for="professional-background"
-                          >您目前面臨的主要挑戰</label
-                        >
-                      </div>
-                    </div>
-                    <!-- 期望達成的目標 -->
-                    <div class="mb-3 mb-lg-4">
-                      <div class="form-floating">
-                        <textarea
-                          class="form-control"
-                          placeholder="期望達成的目標"
-                          id="professional-background"
-                          style="height: 160px"
-                          maxlength="300"
-                        ></textarea>
-                        <label for="professional-background"
-                          >期望達成的目標</label
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <!-- 聯絡偏好 -->
-                <div class="d-flex border-bottom pt-4 pt-lg-5">
-                  <!-- 左側box -->
-                  <div
-                    class="me-3 w-300 flex-shrink-0 d-none d-lg-flex flex-lg-column"
-                  >
-                    <p class="mb-3 fs-4 fw-medium lh-sm">聯絡偏好</p>
-                    <p class="text-secondary">欄位皆為選填</p>
-                  </div>
-                  <!-- 右側box -->
-                  <div>
-                    <div
-                      class="mb-3 d-flex align-items-center justify-content-between d-lg-none"
+                    <a
+                      href="#"
+                      class="fs-14 text-secondary border rounded-pill px-2 py-1"
+                      ># 數位遊牧生活設計</a
                     >
-                      <p class="fs-4 lh-sm">聯絡偏好</p>
-                      <p class="text-secondary fs-14">欄位皆為選填</p>
-                    </div>
-                    <!-- 偏好聯絡方式 -->
-                    <div class="mb-3 mb-lg-4">
-                      <p class="mb-2 fs-14">偏好聯絡方式</p>
-                      <div class="px-2">
-                        <div
-                          class="form-check form-check-inline me-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="radio"
-                            name="gender-group"
-                            id="gender-1"
-                            value="gender-1"
-                            checked
-                          />
-                          <label class="form-check-label" for="gender-1"
-                            >信箱
-                          </label>
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="radio"
-                            name="gender-group"
-                            id="gender-2"
-                            value="gender-2"
-                          />
-                          <label class="form-check-label" for="gender-2"
-                            >電話
-                          </label>
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="radio"
-                            name="gender-group"
-                            id="gender-3"
-                            value="gender-3"
-                          />
-                          <label class="form-check-label" for="gender-3"
-                            >LINE
-                          </label>
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="radio"
-                            name="gender-group"
-                            id="gender-3"
-                            value="gender-3"
-                          />
-                          <label class="form-check-label" for="gender-3">
-                            Discord</label
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <!-- 偏好聯絡時段 -->
-                    <div class="mb-3 mb-lg-4">
-                      <p class="mb-2 fs-14">偏好聯絡時段</p>
-                      <div class="px-lg-2">
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-1"
-                            value="fields-1"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-1"
-                          >
-                            平日上午(9:00-12:00)</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-2"
-                            value="fields-2"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-2"
-                            >平日下午(13:00-17:00)</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-3"
-                            value="fields-3"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-3"
-                            >平日晚上(18:00-21:00)</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-4"
-                            value="fields-4"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-4"
-                            >週末上午(9:00-12:00)</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-5"
-                            value="fields-5"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-5"
-                            >週末下午(13:00-17:00)</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-6"
-                            value="fields-6"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-6"
-                          >
-                            週末晚上(18:00-21:00)</label
-                          >
-                        </div>
-                        <p class="mt-2 fs-lg-14 px-2 text-secondary">
-                          建議您可以勾選 2 個時段以上
-                        </p>
-                      </div>
-                    </div>
-                    <!-- 預約諮詢時間 -->
-                    <div class="mb-3 mb-lg-4">
-                      <div class="form-floating mb-3">
-                        <input
-                          type="date"
-                          class="form-control"
-                          id="birthday"
-                          placeholder="預約諮詢時間"
-                        />
-                        <label for="birthday">預約諮詢時間</label>
-                      </div>
-                    </div>
-                    <!-- 如何得知我們 -->
-                    <div class="mb-3 mb-lg-4">
-                      <p class="mb-2 fs-14">如何得知我們</p>
-                      <div class="px-lg-2">
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-1"
-                            value="fields-1"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-1"
-                          >
-                            Google 搜尋</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-2"
-                            value="fields-2"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-2"
-                            >Instagram</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-3"
-                            value="fields-3"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-3"
-                            >Facebook</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-4"
-                            value="fields-4"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-4"
-                            >Threads</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-5"
-                            value="fields-5"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-5"
-                            >YouTube</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-6"
-                            value="fields-6"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-6"
-                          >
-                            Podcast / 節目推薦</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-6"
-                            value="fields-6"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-6"
-                          >
-                            朋友或同事推薦</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-6"
-                            value="fields-6"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-6"
-                          >
-                            曾參加職旅活動 / 工作坊</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-6"
-                            value="fields-6"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-6"
-                          >
-                            職涯顧問介紹</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-6"
-                            value="fields-6"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-6"
-                          >
-                            其他（請填寫下題）</label
-                          >
-                        </div>
-                        <p class="mt-2 fs-lg-14 px-2 text-secondary">
-                          最多勾選 3 個
-                        </p>
-                      </div>
-                    </div>
-                    <!-- 有什麼其他想告訴我們的事情嗎？（最多300字） -->
-                    <div class="mb-3 mb-lg-4">
-                      <div class="form-floating">
-                        <textarea
-                          class="form-control"
-                          placeholder="有什麼其他想告訴我們的事情嗎？（最多300字）"
-                          id="professional-skills"
-                          style="height: 160px"
-                          maxlength="300"
-                        ></textarea>
-                        <label for="professional-skills"
-                          >有什麼其他想告訴我們的事情嗎？（最多300字）</label
-                        >
-                      </div>
-                    </div>
-                    <!-- 勾選條款同意 -->
-                    <div class="mb-4 mb-lg-5">
-                      <div class="px-lg-2">
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-1"
-                            value="fields-1"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-1"
-                          >
-                            我願意接收職旅最新資訊和專業內容</label
-                          >
-                        </div>
-                        <div
-                          class="form-check form-check-inline me-3 me-lg-4 mb-2 fs-14"
-                        >
-                          <input
-                            class="form-check-input"
-                            type="checkbox"
-                            id="professional-fields-2"
-                            value="fields-2"
-                          />
-                          <label
-                            class="form-check-label"
-                            for="professional-fields-2"
-                            >我同意
-                            <span
-                              ><a href="terms-of-service.html"
-                                >服務條款</a
-                              ></span
-                            >
-                            和<span
-                              ><a href="privacy-policy.html">隱私政策</a></span
-                            ></label
-                          >
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card h-100 rounded-4 overflow-hidden">
+                <div class="card-img-top p-0">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/mentor-2.png?raw=true"
+                    alt="partner-2"
+                    height="400"
+                    class="w-100 object-fit-cover"
+                  />
+                </div>
+                <div class="card-body">
+                  <h4 class="fs-14 mb-2 text-secondary">個人品牌策略專家</h4>
+                  <h3 class="fs-4 fw-medium mb-3">林曉彤 Clara Lin</h3>
+                  <div class="d-flex flex-wrap pb-4">
+                    <a
+                      href="#"
+                      class="fs-14 text-secondary border rounded-pill px-2 py-1 me-2"
+                      ># 個人品牌建立</a
+                    >
+                    <a
+                      href="#"
+                      class="fs-14 text-secondary border rounded-pill px-2 py-1"
+                      ># 內容行銷策略</a
+                    >
+                    <a
+                      href="#"
+                      class="fs-14 text-secondary border rounded-pill px-2 py-1"
+                      ># 故事行銷</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card h-100 rounded-4 overflow-hidden">
+                <div class="card-img-top p-0">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/mentor-3.png?raw=true"
+                    alt="partner-3"
+                    height="400"
+                    class="w-100 object-fit-cover"
+                  />
+                </div>
+                <div class="card-body">
+                  <h4 class="fs-14 mb-2 text-secondary">財務自由規劃顧問</h4>
+                  <h3 class="fs-4 fw-medium mb-3">王建明 Marcus</h3>
+                  <div class="d-flex flex-wrap pb-4">
+                    <a
+                      href="#"
+                      class="fs-14 text-secondary border rounded-pill px-2 py-1 me-2"
+                      ># 稅務優化</a
+                    >
+                    <a
+                      href="#"
+                      class="fs-14 text-secondary border rounded-pill px-2 py-1"
+                      ># 被動收入建立</a
+                    >
+                    <a
+                      href="#"
+                      class="fs-14 text-secondary border rounded-pill px-2 py-1"
+                      ># 現金流管理</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card h-100 rounded-4 overflow-hidden">
+                <div class="card-img-top p-0">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/mentor-4.png?raw=true"
+                    alt="partner-4"
+                    height="400"
+                    class="w-100 object-fit-cover"
+                  />
+                </div>
+                <div class="card-body">
+                  <h4 class="fs-14 mb-2 text-secondary">
+                    創意接案與多元收入專家
+                  </h4>
+                  <h3 class="fs-4 fw-medium mb-3">張雅琳 Ariel</h3>
+                  <div class="d-flex flex-wrap pb-4">
+                    <a
+                      href="#"
+                      class="fs-14 text-secondary border rounded-pill px-2 py-1 me-2"
+                      ># 創意變現策略</a
+                    >
+                    <a
+                      href="#"
+                      class="fs-14 text-secondary border rounded-pill px-2 py-1"
+                      ># 線上課程開發</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card h-100 rounded-4 overflow-hidden">
+                <div class="card-img-top p-0">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/mentor-5.png?raw=true"
+                    alt="partner-5"
+                    height="400"
+                    class="w-100 object-fit-cover"
+                  />
+                </div>
+                <div class="card-body">
+                  <h4 class="fs-14 mb-2 text-secondary">遠端工作技術顧問</h4>
+                  <h3 class="fs-4 fw-medium mb-3">李俊宏 Kevin Lee</h3>
+                  <div class="d-flex flex-wrap pb-4">
+                    <a
+                      href="#"
+                      class="fs-14 text-secondary border rounded-pill px-2 py-1 me-2"
+                      ># 專案管理自動化</a
+                    >
+                    <a
+                      href="#"
+                      class="fs-14 text-secondary border rounded-pill px-2 py-1"
+                      ># 虛擬團隊管理</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="card h-100 rounded-4 overflow-hidden">
+                <div class="card-img-top p-0">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/mentor-6.png?raw=true"
+                    alt="partner-6"
+                    height="400"
+                    class="w-100 object-fit-cover"
+                  />
+                </div>
+                <div class="card-body">
+                  <h4 class="fs-14 mb-2 text-secondary">數位遊牧先驅</h4>
+                  <h3 class="fs-4 fw-medium mb-3">陳志遠 Ethan Chen</h3>
+                  <div class="d-flex flex-wrap pb-4">
+                    <a
+                      href="#"
+                      class="fs-14 text-secondary border rounded-pill px-2 py-1 me-2"
+                      ># 遠端工作策略</a
+                    >
+                    <a
+                      href="#"
+                      class="fs-14 text-secondary border rounded-pill px-2 py-1"
+                      ># 數位遊牧生活設計</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-                <!-- 按鈕 -->
-                <div
-                  class="d-flex flex-column-reverse flex-lg-row justify-content-center"
-                >
-                  <button
-                    type="button"
-                    class="btn btn-light border rounded-4 w-lg-100 me-lg-4 d-flex align-items-center justify-content-center fs-14 py-12 ps-20 pe-12"
-                  >
-                    重新填寫<span class="material-icons-outlined">
-                      chevron_right
-                    </span>
-                  </button>
-                  <button
-                    type="button"
-                    class="btn btn-dark rounded-4 w-lg-100 d-flex align-items-center justify-content-center fs-14 py-12 mb-3 mb-lg-0 ps-20 pe-12"
-                  >
-                    確認送出
-                    <span class="material-icons-outlined ms-1">
-                      chevron_right
-                    </span>
-                  </button>
-                </div>
-              </form>
+        <div class="bg-blue pt-3 pb-4 px-4 mb-5 text-center rounded-3">
+          <div class="bg-white d-inline-block rounded-3">
+            <p class="fs-18 text-team fw-bold py-12 px-4">團隊承諾</p>
+          </div>
+
+          <p class="fs-14 mt-3 mb-4 text-white">
+            我們不只是顧問，更是你職業轉型路上的夥伴與同行者。我們深知轉型過程中的不確定與恐懼，也經歷過停滯不前的困境。正因如此，我們更懂得如何陪你走過這段旅程，不只指引方向，更與你並肩同行。
+          </p>
+          <div class="">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week6/about/text-mb.svg"
+              alt="text-mb"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 公司資料 -->
+    <div class="bg-gray py-5">
+      <div class="container-lg">
+        <p class="fs-28 fw-bold mb-4 text-center">公司資訊</p>
+        <div class="bg-white rounded-3 p-4">
+          <div class="d-flex border-bottom">
+            <div class="flex-shrink-0 w-120">
+              <p class="p-3 text-secondary mb-18 fs-14 fw-bold">公司位置</p>
             </div>
+            <div class="">
+              <p p class="py-3 pe-3 fs-14 fw-medium">
+                110台北市信義區信義路五段7號
+              </p>
+            </div>
+          </div>
+          <div class="d-flex border-bottom">
+            <div class="flex-shrink-0 w-120">
+              <p class="p-3 text-secondary mb-18 fs-14 fw-bold">聯絡專線</p>
+            </div>
+            <div class="">
+              <p p class="py-3 pe-3 fs-14 fw-medium">02-2758-6600</p>
+            </div>
+          </div>
+          <div class="d-flex border-bottom">
+            <div class="flex-shrink-0 w-120">
+              <p class="p-3 text-secondary mb-18 fs-14 fw-bold">負責人</p>
+            </div>
+            <div class="">
+              <p p class="py-3 pe-3 fs-14 fw-medium">張世明</p>
+            </div>
+          </div>
+          <div class="d-flex border-bottom">
+            <div class="flex-shrink-0 w-120">
+              <p class="p-3 text-secondary mb-18 fs-14 fw-bold">營業時間</p>
+            </div>
+            <div class="">
+              <p p class="py-3 pe-3 fs-14 fw-medium">
+                週一至週五 10:00～18:00（國定假日休息）
+              </p>
+            </div>
+          </div>
+          <div class="d-flex border-bottom">
+            <div class="flex-shrink-0 w-120">
+              <p class="p-3 text-secondary mb-18 fs-14 fw-bold">電子郵件</p>
+            </div>
+            <div class="">
+              <p p class="py-3 pe-3 fs-14 fw-medium">contact@workway.tw</p>
+            </div>
+          </div>
+          <div class="d-flex border-bottom">
+            <div class="flex-shrink-0 w-120">
+              <p class="p-3 text-secondary mb-18 fs-14 fw-bold">成立時間</p>
+            </div>
+            <div class="">
+              <p p class="py-3 pe-3 fs-14 fw-medium">2023 年 6 月</p>
+            </div>
+          </div>
+          <div class="d-flex border-bottom mb-4">
+            <div class="flex-shrink-0 w-120">
+              <p class="p-3 text-secondary mb-18 fs-14 fw-bold">統一編號</p>
+            </div>
+            <div class="">
+              <p p class="py-3 pe-3 fs-14 fw-medium">83149276</p>
+            </div>
+          </div>
+          <img
+            src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/about/map.png?raw=true"
+            alt="map.png"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- 預約免費職涯探索 -->
+    <div class="container-lg">
+      <div class="bg-white py-40">
+        <div class="bg-blue text-white rounded-3 py-3 px-4">
+          <div class="">
+            <p class="h5">邁向你真正想過的生活，從這裡開始</p>
+            <p class="border-bottom-dotted pb-4">
+              第一次諮詢只要 30 分鐘，可能改變你未來 30 年的生活方式
+            </p>
+          </div>
+          <div class="mt-3">
+            <p>0800-123-123</p>
+            <p>Sample@mail.com</p>
+            <button
+              type="button"
+              class="btn btn-dark rounded-4 w-lg-100 d-flex align-items-center justify-content-center fs-14 py-12 mb-3 mb-lg-0 ps-20 pe-12"
+            >
+              預約免費職涯探索
+              <span class="material-icons-outlined ms-1"> chevron_right </span>
+            </button>
           </div>
         </div>
       </div>
@@ -736,5 +349,6 @@
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
