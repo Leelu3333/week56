@@ -27,7 +27,34 @@
 .border-bottom-dotted {
   border-bottom: 1px dotted #ffffff; /* 可換顏色 */
 }
-
+.text-mb-img {
+  width: 303px;
+  height: 100px;
+  overflow: hidden;
+  img {
+    object-fit: cover;
+  }
+}
+.map-img {
+  width: 303px;
+  height: 200px;
+  overflow: hidden;
+  img {
+    object-fit: cover;
+  }
+}
+.bg-white::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  color: beige;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid white;
+}
 @media (max-width: 1920px) {
   .banner-person-img {
     display: none;
