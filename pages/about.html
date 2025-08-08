@@ -234,28 +234,36 @@
         </div>
 
         <div class="bg-blue pt-3 pb-4 px-4 mb-5 text-center rounded-3">
-          <div class="bg-white d-inline-block rounded-3">
+          <div class="bg-white horn d-inline-block rounded-3">
             <p class="fs-18 text-team fw-bold py-12 px-4">團隊承諾</p>
           </div>
 
           <p class="fs-14 mt-3 mb-4 text-white">
             我們不只是顧問，更是你職業轉型路上的夥伴與同行者。我們深知轉型過程中的不確定與恐懼，也經歷過停滯不前的困境。正因如此，我們更懂得如何陪你走過這段旅程，不只指引方向，更與你並肩同行。
           </p>
-          <div class="text-mb-img">
+          <div class="text-mb-img d-md-none">
             <img
-              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week6/about/text-mb.svg"
+              src="
+                  https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week6/about/text-mb.svg
+                "
               alt="text-mb"
               class="w-100 h-100"
+            />
+          </div>
+          <div class="d-none d-md-block">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week6/about/text-pc.svg"
+              alt="text-pc"
             />
           </div>
         </div>
       </div>
     </div>
     <!-- 公司資料 -->
-    <div class="bg-gray py-5">
-      <div class="container-lg">
+    <div class="bg-gray py-5 position-relative">
+      <div class="container-lg position-relative z-index-1">
         <p class="fs-28 fw-bold mb-4 text-center">公司資訊</p>
-        <div class="bg-white rounded-3 p-4">
+        <div class="bg-white rounded-3 p-4 shadow">
           <div class="d-flex border-bottom">
             <div class="flex-shrink-0 w-120">
               <p class="p-3 text-secondary mb-18 fs-14 fw-bold">公司位置</p>
@@ -325,23 +333,35 @@
           </div>
         </div>
       </div>
+      <div class="bg-white bg position-absolute d-none d-lg-block"></div>
     </div>
     <!-- 預約免費職涯探索 -->
     <div class="container-lg">
       <div class="bg-white py-40">
         <div class="bg-blue text-white rounded-3 py-3 px-4">
+          <img
+            src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week6/logo-icon-w.svg"
+            alt="login-icon"
+            class="mb-4"
+          />
           <div class="">
-            <p class="h5">邁向你真正想過的生活，從這裡開始</p>
+            <p class="h5 mb-12">邁向你真正想過的生活，從這裡開始</p>
             <p class="border-bottom-dotted pb-4">
               第一次諮詢只要 30 分鐘，可能改變你未來 30 年的生活方式
             </p>
           </div>
           <div class="mt-3">
-            <p>0800-123-123</p>
-            <p>Sample@mail.com</p>
+            <p class="mb-3 d-flex align-items-center">
+              <span class="me-2 material-icons-outlined"> phone </span
+              >0800-123-123
+            </p>
+            <p class="mb-4 d-flex align-items-center">
+              <span class="me-2 material-icons-outlined"> mail </span
+              >Sample@mail.com
+            </p>
             <button
               type="button"
-              class="btn btn-dark rounded-4 w-lg-100 d-flex align-items-center justify-content-center fs-14 py-12 mb-3 mb-lg-0 ps-20 pe-12"
+              class="btn btn-dark rounded-4 d-flex align-items-center justify-content-center fs-14 p-12 mb-3 mb-lg-0"
             >
               預約免費職涯探索
               <span class="material-icons-outlined ms-1"> chevron_right </span>
