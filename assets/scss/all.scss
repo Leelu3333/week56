@@ -1,13 +1,14 @@
-@import '../../node_modules/bootstrap/scss/functions';
-@import './utils/variables';
-@import '../../node_modules/bootstrap';
+@import "../../node_modules/bootstrap/scss/functions";
+@import "./utils/variables";
+@import "../../node_modules/bootstrap";
 
-@import './layout/header.scss';
-@import './layout/footer.scss';
-@import './base/base.scss';
-@import './utils/utilities';
+@import "./utils/utilities";
+@import "bootstrap/scss/utilities/api";
 
-@import './pages/index.scss';
-@import './pages/user.scss';
-@import './pages/content.scss';
-@import './pages/about.scss';
+@import "./layout/header.scss";
+@import "./base/base.scss";
+
+@import "./pages/index.scss";
+@import "./pages/user.scss";
+@import "./pages/content.scss";
+@import "./pages/about.scss";
