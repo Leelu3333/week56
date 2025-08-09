@@ -1,3 +1,18 @@
 .index-title {
   font-size: 100px;
 }
+.btn-login-close {
+  top: -12px;
+  right: -12px;
+}
+.icon-size {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 1024px) {
+  .btn-login-close {
+    top: -24px;
+    right: -24px;
+  }
+}

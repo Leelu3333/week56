@@ -17,8 +17,8 @@
   <body>
     <%- include('./layout/header'); -%>
     <!-- 關於職旅 -->
-    <div class="about-banner-img text-center position-relative">
-      <div class="container-lg">
+    <div class="about-banner-img text-center">
+      <div class="container-lg position-relative py-5 py-xl-80">
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <p class="h2 fw-bold mb-4 mb-lg-5">關於職旅</p>
@@ -29,12 +29,15 @@
             <p class="text-natural-50">
               無論你是剛開始探索期，還是已在轉型路上遇到瓶頸，我們都能提供適合你的專業指導。
             </p>
-            <div class="position-absolute banner-person-img">
-              <img
-                src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week6/service/banner-person.svg"
-                alt="banner-person"
-              />
-            </div>
+          </div>
+
+          <div
+            class="position-absolute banner-person-img d-none d-xl-flex justify-content-end"
+          >
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week6/service/banner-person.svg"
+              alt="banner-person"
+            />
           </div>
         </div>
       </div>
@@ -369,7 +372,8 @@
         </div>
       </div>
     </div>
-    <%- include('./layout/footer'); -%>
+    <%- include('./layout/login-register'); -%> <%- include('./layout/footer');
+    -%>
 
     <script type="module" src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
