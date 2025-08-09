@@ -8,9 +8,10 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
+
     <title>個人資料</title>
-    <script type="module" crossorigin src="/week56/assets/main-1UaDo_Jm.js"></script>
-    <link rel="stylesheet" crossorigin href="/week56/assets/main-D_qV7PBc.css">
+    <script type="module" crossorigin src="/week56/assets/main-BBWdRuOg.js"></script>
+    <link rel="stylesheet" crossorigin href="/week56/assets/main-BZJMJEO9.css">
   </head>
   <body>
     <nav
@@ -44,46 +45,59 @@
         </ul>
       </div>
     </div>
+    <div class="d-flex">
+      <a href="user.html" class="d-flex align-items-center"
+        ><img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week5/avatar.png?raw=true"
+          alt="user.png"
+          class="user-img rounded-circle me-2 border"
+        />
+        <p class="fw-medium lh-sm fs-sm fs-lg-6">Mokumaru</p></a
+      >
 
-    <a href="user.html" class="d-flex align-items-center"
-      ><img
-        src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week5/avatar.png?raw=true"
-        alt="user.png"
-        class="user-img rounded-circle me-2 border"
-      />
-      <p class="fw-medium lh-sm fs-sm fs-lg-6">Mokumaru</p></a
-    >
-
-    <button
-      class="navbar-toggler d-sm-flex d-lg-none border-0 p-1 px-lg-12 ms-4 ms-lg-0"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarToggleExternalContent"
-      aria-controls="navbarToggleExternalContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <button
+        class="navbar-toggler d-sm-flex d-lg-none border-0 p-1 px-lg-12 ms-4 ms-lg-0"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
   </div>
   <div class="container d-sm-flex d-lg-none">
     <div
-      class="collapse navbar-collapse justify-content-center mt-3"
-      id="navbarToggleExternalContent"
+      class="offcanvas offcanvas-top min-vh-100"
+      tabindex="-1"
+      id="offcanvasNavbar"
+      aria-labelledby="offcanvasNavbarLabel"
     >
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link me-3 py-2 px-4 fs-lg-6" href="#">服務方案</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link me-3 py-2 px-4 fs-lg-6" href="about.html"
-            >關於職旅</a
-          >
-        </li>
-        <li class="nav-item">
-          <a class="nav-link py-2 px-4 fs-lg-6" href="content.html">聯絡我們</a>
-        </li>
-      </ul>
+      <div class="offcanvas-body">
+        <div class="text-end mb-3">
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <ul class="navbar-nav text-center">
+          <li class="nav-item mb-4">
+            <a class="nav-link py-3 fs-lg-6 text-black" href="#">服務方案</a>
+          </li>
+          <li class="nav-item mb-4">
+            <a class="nav-link py-3 fs-lg-6 text-black" href="about.html"
+              >關於職旅</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link py-3 fs-lg-6 text-black" href="content.html"
+              >聯絡我們</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </nav>
@@ -294,7 +308,7 @@
                             aria-hidden="true"
                           >
                             <div
-                              class="modal-dialog modal-dialog modal-dialog-centered"
+                              class="modal-dialog modal-sm modal-dialog-centered"
                             >
                               <!-- 彈出內容 -->
                               <div class="modal-content">
