@@ -17,8 +17,8 @@
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <title>index</title>
-    <script type="module" crossorigin src="/week56/assets/main-jjVIQMTW.js"></script>
-    <link rel="stylesheet" crossorigin href="/week56/assets/main-C324KEmp.css">
+    <script type="module" crossorigin src="/week56/assets/main-Dr1eJM3o.js"></script>
+    <link rel="stylesheet" crossorigin href="/week56/assets/main-DmfWnvzM.css">
   </head>
   <body>
     <nav
@@ -80,7 +80,7 @@
       id="offcanvasNavbar"
       aria-labelledby="offcanvasNavbarLabel"
     >
-      <div class="offcanvas-body pb-3">
+      <div class="offcanvas-body pb-3 d-flex flex-column">
         <div class="text-end mb-3">
           <button
             type="button"
@@ -104,8 +104,18 @@
             >
           </li>
         </ul>
+        <div class="mt-auto px-4 pt-0 pb-4">
+          <button
+            class="btn bg-secondary-50 text-black rounded-4 w-100 fs-lg fw-bold lh-sm py-1"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModalToggle"
+          >
+            登入/註冊
+          </button>
+        </div>
       </div>
-      <div class="offcanvas-footer px-4 pt-0 pb-4">
+      <!-- <div class="offcanvas-footer px-4 pt-0 pb-4">
         <button
           class="btn bg-secondary-50 text-black rounded-4 w-100 fs-lg fw-bold lh-sm py-1"
           type="button"
@@ -114,7 +124,7 @@
         >
           登入/註冊
         </button>
-      </div>
+      </div> -->
     </div>
   </div>
 </nav>
@@ -211,7 +221,7 @@
                       src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/story-cover-1.png?raw=true"
                       alt="圖片1"
                     />
-                    <div class="position-absolute index-badge">
+                    <div class="position-absolute index-swiper-badge">
                       <span
                         class="badge text-white bg-primary py-2 px-3 fw-medium"
                         >數位遊牧 2 年</span
@@ -242,7 +252,7 @@
                       src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/story-cover-2.png?raw=true"
                       alt="圖片2"
                     />
-                    <div class="position-absolute index-badge">
+                    <div class="position-absolute index-swiper-badge">
                       <span
                         class="badge text-white bg-primary py-2 px-3 fw-medium"
                         >數位遊牧 2 年</span
@@ -274,7 +284,7 @@
                       src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/story-cover-3.png?raw=true"
                       alt="圖片3"
                     />
-                    <div class="position-absolute index-badge">
+                    <div class="position-absolute index-swiper-badge">
                       <span
                         class="badge text-white bg-primary py-2 px-3 fw-medium"
                         >數位遊牧 3 年</span
@@ -306,7 +316,7 @@
                       src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/story-cover-4.png?raw=true"
                       alt="圖片4"
                     />
-                    <div class="position-absolute index-badge">
+                    <div class="position-absolute index-swiper-badge">
                       <span
                         class="badge text-white bg-primary py-2 px-3 fw-medium"
                         >數位遊牧 2 年</span
@@ -337,7 +347,7 @@
                       src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/story-cover-5.png?raw=true"
                       alt="圖片5"
                     />
-                    <div class="position-absolute index-badge">
+                    <div class="position-absolute index-swiper-badge">
                       <span
                         class="badge text-white bg-primary py-2 px-3 fw-medium"
                         >數位遊牧 2 年</span
@@ -368,7 +378,7 @@
                       src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/story-cover-6.png?raw=true"
                       alt="圖片6"
                     />
-                    <div class="position-absolute index-badge">
+                    <div class="position-absolute index-swiper-badge">
                       <span
                         class="badge text-white bg-primary py-2 px-3 fw-medium"
                         >數位遊牧 2 年</span
@@ -402,6 +412,7 @@
     <!-- 選擇職旅 WorkWay -->
     <div class="bg-natural-95">
       <div class="container-lg py-5 py-lg-80">
+        <!-- 文字 -->
         <div class="text-center pb-4 pb-lg-5 position-relative">
           <img src="/week56/assets/dialog-IMJQCI-f.svg" alt="dialog.svg" />
           <p class="mt-1 fw-bold fs-2 fs-lg-1 lh-sm">選擇職旅 WorkWay</p>
@@ -412,15 +423,84 @@
             />
           </div>
         </div>
-        <div class="">
-          <div class="">
+        <!-- 卡片 -->
+        <div class="d-lg-flex mb-lg-5">
+          <div
+            class="card border-0 border-radius-sm border-0 position-relative overflow-hidden mb-3 mb-lg-0 me-lg-4"
+          >
             <img
               src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/adv-1.png?raw=true"
               alt="adv-1.png"
+              class="border-radius-sm"
             />
-            <div class=""></div>
+            <div class="position-absolute index-chose-badge z-1">
+              <span
+                class="rounded-top-end text-natural-50 bg-natural-95 p-12 pe-4 fw-medium d-flex align-items-center"
+                ><span class="material-icons-outlined me-2 text-primary-60">
+                  ads_click </span
+                >實戰經驗</span
+              >
+            </div>
+            <div
+              class="card-img-overlay bg-dark bg-opacity-50 d-flex align-items-center justify-content-center opacity-0 hover-opacity transition p-4"
+            >
+              <p class="text-white text-center">
+                我們的顧問都是親身走過這條路的專家，不是紙上談兵的理論家。你所學到的每一個建議，都是經過無數次嘗試與錯誤後萃取的精華。
+              </p>
+            </div>
+          </div>
+          <div
+            class="card border-0 border-radius-sm border-0 position-relative overflow-hidden mb-3 mb-lg-0 me-lg-4"
+          >
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/adv-2.png?raw=true"
+              alt="adv-2.png"
+              class="border-radius-sm"
+            />
+            <div class="position-absolute index-chose-badge z-1">
+              <span
+                class="rounded-top-end text-natural-50 bg-natural-95 p-12 pe-4 fw-medium d-flex align-items-center"
+                ><span class="material-icons-outlined me-2 text-primary-60">
+                  ads_click </span
+                >全方位支持</span
+              >
+            </div>
+            <div
+              class="card-img-overlay bg-dark bg-opacity-50 d-flex align-items-center justify-content-center opacity-0 hover-opacity transition p-4"
+            >
+              <p class="text-white text-center">
+                從心態調整到實際操作，從品牌建立到財務規劃，我們提供你轉型路上需要的每一塊拼圖，讓不確定感不再阻礙你的決定。
+              </p>
+            </div>
+          </div>
+          <div
+            class="card border-0 border-radius-sm border-0 position-relative overflow-hidden mb-3 mb-lg-0"
+          >
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/adv-3.png?raw=true"
+              alt="adv-3.png"
+              class="border-radius-sm"
+            />
+            <div class="position-absolute index-chose-badge z-1">
+              <span
+                class="rounded-top-end text-natural-50 bg-natural-95 p-12 pe-4 fw-medium d-flex align-items-center"
+                ><span class="material-icons-outlined me-2 text-primary-60">
+                  ads_click </span
+                >社群力量</span
+              >
+            </div>
+            <div
+              class="card-img-overlay bg-dark bg-opacity-50 d-flex align-items-center justify-content-center opacity-0 hover-opacity transition p-4"
+            >
+              <p class="text-white text-center">
+                加入職旅不只是獲得諮詢，更是連結到一群志同道合的夥伴。在這裡，你的疑惑有人解答，你的成就有人分享，你的旅程不再孤單。
+              </p>
+            </div>
           </div>
         </div>
+        <p class="fs-sm text-natural-50 fw-medium lh-sm">
+          不是套模板的建議，而是為你量身打造的陪伴！
+        </p>
       </div>
     </div>
     <!-- 登入 -->
