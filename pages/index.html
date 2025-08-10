@@ -12,16 +12,323 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>index</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
+    <!-- banner -->
+    <div class="container-lg d-lg-flex justify-content-lg-center">
+      <div class="index-banner mt-40">
+        <div class="pt-2 pb-40 py-lg-40">
+          <p class="fw-bold fs-2 fs-lg-80 lh-sm text-center mb-4">
+            一起陪伴、探索<br />還有你那些未完成的夢
+          </p>
+          <div
+            class="d-flex flex-column flex-lg-row justify-content-lg-center justify-content-lg-between index-py-5"
+          >
+            <p class="text-natural-50 text-center text-lg-start py-1 fs-lg-5">
+              自由工作很美，也很難。 <br />我們用 1 對 1
+              陪伴，陪你從第一步開始，直到夢想變成日常
+            </p>
+            <div class="mt-3 mt-lg-0 d-flex justify-content-center">
+              <button
+                class="btn bg-secondary-50 text-black rounded-4 fs-lg fw-bold lh-sm py-lg-3 ps-lg-20 pe-lg-12 d-flex align-items-center"
+                type="button"
+              >
+                開始你的職旅<span class="material-icons-outlined ms-1">
+                  chevron_right
+                </span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- banner-img -->
+    <div class="row d-none d-lg-flex mx-lg-12 mb-lg-80">
+      <div class="col-lg-4 d-lg-flex">
+        <img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/hero-1.png?raw=true"
+          alt="hero-1.png"
+        />
+      </div>
 
-    <h1 class="index-title text-primary">我是首頁</h1>
+      <div class="col-lg-4 d-lg-flex flex-column">
+        <img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/hero-2.png?raw=true"
+          alt="hero-2.png"
+          class="mb-lg-4"
+        /><img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/hero-3.png?raw=true"
+          alt="hero-3.png"
+        />
+      </div>
+      <div class="col-lg-4 d-lg-flex">
+        <img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/hero-4.png?raw=true"
+          alt="hero-4.png"
+        />
+      </div>
+    </div>
+    <div class="container-lg d-lg-none mb-5">
+      <div class="col-12 col-lg-4">
+        <img
+          src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/hero-4.png?raw=true"
+          alt="hero-4.png"
+        />
+      </div>
+    </div>
+    <!-- swiper -->
+    <div class="position-relative overflow-hidden">
+      <div class="container-lg">
+        <div class="row flex-lg-nowrap py-5 py-lg-80">
+          <div
+            class="col-lg-4 d-flex flex-column justify-content-center align-items-start"
+          >
+            <img
+              src="https://github.com/0404kai/2025-layout-img/blob/main/week6/logo.png?raw=true"
+              class="mb-3 mb-lg-4"
+              alt="logo"
+            />
+            <h2 class="fs-2 fs-lg-1 fw-bold lh-sm mb-3 mb-lg-4">
+              他們已經踏上職旅<br />
+              聽聽他們的故事
+            </h2>
+            <p class="fs-6 fs-lg-5 text-natural-50 mb-4 mb-lg-0">
+              每一段職涯轉型都有獨特挑戰，這些曾經與你有相同疑惑的夥伴，現在正過著他們嚮往的生活
+            </p>
+          </div>
+          <div class="ps-4 col-lg-12">
+            <div class="swiper index-Swiper mb-3">
+              <div class="swiper-wrapper py-12">
+                <div
+                  class="swiper-slide overflow-hidden shadow rounded-4 bg-white"
+                >
+                  <div class="position-relative">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/story-cover-1.png?raw=true"
+                      alt="圖片1"
+                    />
+                    <div class="position-absolute index-badge">
+                      <span
+                        class="badge text-white bg-primary py-2 px-3 fw-medium"
+                        >數位遊牧 2 年</span
+                      >
+                    </div>
+                  </div>
 
+                  <div
+                    class="p-3 pb-4 d-flex flex-column justify-content-between"
+                  >
+                    <h3 class="fs-lg fs-lg-4 lh-sm fw-bold mb-3">
+                      轉型成功的設計師
+                    </h3>
+                    <p class="mb-3 text-natural-50">
+                      從企業設計師轉職自由接案，比我想的難太多。收入不穩時我幾乎想放棄，是職旅顧問幫我找回方向與差異化。半年後，我不僅維持收入，還能自由挑案，最重要的是，我終於有時間陪爸媽。
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <p class="fs-sm lh-sm fw-bold me-2">視覺設計師</p>
+                      <p class="border-start ps-2">郭敏迪 (34y)</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide overflow-hidden shadow rounded-4 bg-white"
+                >
+                  <div class="position-relative">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/story-cover-2.png?raw=true"
+                      alt="圖片2"
+                    />
+                    <div class="position-absolute index-badge">
+                      <span
+                        class="badge text-white bg-primary py-2 px-3 fw-medium"
+                        >數位遊牧 2 年</span
+                      >
+                    </div>
+                  </div>
+
+                  <div
+                    class="p-3 pb-4 d-flex flex-column justify-content-between"
+                  >
+                    <h3 class="fs-lg fs-lg-4 lh-sm fw-bold mb-3">
+                      數位遊牧生活實踐者
+                    </h3>
+                    <p class="mb-3 text-natural-50">
+                      兩年前我只想環遊世界，卻不知道怎麼開始。職旅給了我遠端工作與生活規劃的指導。現在我在五個國家工作過，收入比以前多
+                      20%。每次打開電腦，看見窗外不同的風景，都慶幸當初那一個決定。
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <p class="fs-sm lh-sm fw-bold me-2">內容策略師</p>
+                      <p class="border-start ps-2">林雨潔 (29y)</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide overflow-hidden shadow rounded-4 bg-white"
+                >
+                  <div class="position-relative">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/story-cover-3.png?raw=true"
+                      alt="圖片3"
+                    />
+                    <div class="position-absolute index-badge">
+                      <span
+                        class="badge text-white bg-primary py-2 px-3 fw-medium"
+                        >數位遊牧 3 年</span
+                      >
+                    </div>
+                  </div>
+
+                  <div
+                    class="p-3 pb-4 d-flex flex-column justify-content-between"
+                  >
+                    <h3 class="fs-lg fs-lg-4 lh-sm fw-bold mb-3">
+                      中年轉型的工程師
+                    </h3>
+                    <p class="mb-3 text-natural-50">
+                      59
+                      歲被裁員時，我以為職涯結束了。職旅顧問不只幫我轉職，更讓我相信自己還有價值。現在我每月穩定接案、收入翻倍。年齡不是限制，只是我還沒找到對的方向。
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <p class="fs-sm lh-sm fw-bold me-2">系統架構顧問</p>
+                      <p class="border-start ps-2">張世明 (62y)</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide overflow-hidden shadow rounded-4 bg-white"
+                >
+                  <div class="position-relative">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/story-cover-4.png?raw=true"
+                      alt="圖片4"
+                    />
+                    <div class="position-absolute index-badge">
+                      <span
+                        class="badge text-white bg-primary py-2 px-3 fw-medium"
+                        >數位遊牧 2 年</span
+                      >
+                    </div>
+                  </div>
+
+                  <div
+                    class="p-3 pb-4 d-flex flex-column justify-content-between"
+                  >
+                    <h3 class="fs-lg fs-lg-4 lh-sm fw-bold mb-3">
+                      轉型成功的設計師
+                    </h3>
+                    <p class="mb-3 text-natural-50">
+                      從企業設計師轉職自由接案，比我想的難太多。收入不穩時我幾乎想放棄，是職旅顧問幫我找回方向與差異化。半年後，我不僅維持收入，還能自由挑案，最重要的是，我終於有時間陪爸媽。
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <p class="fs-sm lh-sm fw-bold me-2">視覺設計師</p>
+                      <p class="border-start ps-2">郭敏迪 (34y)</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide overflow-hidden shadow rounded-4 bg-white"
+                >
+                  <div class="position-relative">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/story-cover-5.png?raw=true"
+                      alt="圖片5"
+                    />
+                    <div class="position-absolute index-badge">
+                      <span
+                        class="badge text-white bg-primary py-2 px-3 fw-medium"
+                        >數位遊牧 2 年</span
+                      >
+                    </div>
+                  </div>
+
+                  <div
+                    class="p-3 pb-4 d-flex flex-column justify-content-between"
+                  >
+                    <h3 class="fs-lg fs-lg-4 lh-sm fw-bold mb-3">
+                      轉型成功的設計師
+                    </h3>
+                    <p class="mb-3 text-natural-50">
+                      從企業設計師轉職自由接案，比我想的難太多。收入不穩時我幾乎想放棄，是職旅顧問幫我找回方向與差異化。半年後，我不僅維持收入，還能自由挑案，最重要的是，我終於有時間陪爸媽。
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <p class="fs-sm lh-sm fw-bold me-2">視覺設計師</p>
+                      <p class="border-start ps-2">郭敏迪 (34y)</p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="swiper-slide overflow-hidden shadow rounded-4 bg-white"
+                >
+                  <div class="position-relative">
+                    <img
+                      src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/story-cover-6.png?raw=true"
+                      alt="圖片6"
+                    />
+                    <div class="position-absolute index-badge">
+                      <span
+                        class="badge text-white bg-primary py-2 px-3 fw-medium"
+                        >數位遊牧 2 年</span
+                      >
+                    </div>
+                  </div>
+
+                  <div
+                    class="p-3 pb-4 d-flex flex-column justify-content-between"
+                  >
+                    <h3 class="fs-lg fs-lg-4 lh-sm fw-bold mb-3">
+                      轉型成功的設計師
+                    </h3>
+                    <p class="mb-3 text-natural-50">
+                      從企業設計師轉職自由接案，比我想的難太多。收入不穩時我幾乎想放棄，是職旅顧問幫我找回方向與差異化。半年後，我不僅維持收入，還能自由挑案，最重要的是，我終於有時間陪爸媽。
+                    </p>
+                    <div class="d-flex align-items-center">
+                      <p class="fs-sm lh-sm fw-bold me-2">視覺設計師</p>
+                      <p class="border-start ps-2">郭敏迪 (34y)</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide d-none d-lg-flex"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-natural-95 index-bg position-absolute"></div>
+    </div>
+    <!-- 選擇職旅 WorkWay -->
+    <div class="bg-natural-95">
+      <div class="container-lg py-5 py-lg-80">
+        <div class="text-center pb-4 pb-lg-5 position-relative">
+          <img src="../assets/images/dialog.svg" alt="dialog.svg" />
+          <p class="mt-1 fw-bold fs-2 fs-lg-1 lh-sm">選擇職旅 WorkWay</p>
+          <div class="position-absolute index-adv-img d-none d-xl-flex">
+            <img
+              src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week6/index/adv-vectors.svg"
+              alt="adv-vectors.svg"
+            />
+          </div>
+        </div>
+        <div class="">
+          <div class="">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week6/index/adv-1.png?raw=true"
+              alt="adv-1.png"
+            />
+            <div class=""></div>
+          </div>
+        </div>
+      </div>
+    </div>
     <%- include('./layout/login-register'); -%> <%- include('./layout/footer');
     -%>
 
     <script type="module" src="../main.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>

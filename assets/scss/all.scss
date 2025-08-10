@@ -1,14 +1,14 @@
-@import "../../node_modules/bootstrap/scss/functions";
-@import "./utils/variables";
-@import "../../node_modules/bootstrap";
+@import '../../node_modules/bootstrap/scss/functions';
+@import './utils/variables';
+@import '../../node_modules/bootstrap';
 
-@import "./utils/utilities";
-@import "bootstrap/scss/utilities/api";
+@import './utils/utilities';
+@import 'bootstrap/scss/utilities/api';
 
-@import "./layout/header.scss";
-@import "./base/base.scss";
+@import './layout/login-register.scss';
+@import './base/base.scss';
 
-@import "./pages/index.scss";
-@import "./pages/user.scss";
-@import "./pages/content.scss";
-@import "./pages/about.scss";
+@import './pages/index.scss';
+@import './pages/user.scss';
+@import './pages/content.scss';
+@import './pages/about.scss';

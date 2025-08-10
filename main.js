@@ -18,7 +18,24 @@ var swiper = new Swiper(".mySwiper", {
     },
     // when window width is >= 992px
     992: {
-      slidesPerView: 4,
+      slidesPerView: 3.5,
     }    
+  }
+});
+
+var indexswiper = new Swiper(".index-Swiper", {
+  slidesPerView: 1.1,
+  spaceBetween: 16,
+  breakpoints: {
+    
+    // when window width is >= 576px
+    576: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 2.9,
+      spaceBetween: 24,
+    },
   }
 });
