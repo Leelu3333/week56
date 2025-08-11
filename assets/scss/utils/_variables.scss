@@ -502,6 +502,7 @@ $spacers: (
   32: $spacer * 2,
   40: 40px,
   56: $spacer * 7,
+  64: 64px,
   80: 80px
 ) !default;
 // scss-docs-end spacer-variables-maps
@@ -1027,7 +1028,7 @@ $input-border-radius-sm: var(--#{$prefix}border-radius-sm) !default;
 $input-border-radius-lg: var(--#{$prefix}border-radius-lg) !default;
 
 $input-focus-bg: $input-bg !default;
-$input-focus-border-color: tint-color($component-active-bg, 50%) !default;
+$input-focus-border-color: transparent !default; //tint-color($component-active-bg, 50%) !default;
 $input-focus-color: $input-color !default;
 $input-focus-width: $input-btn-focus-width !default;
 $input-focus-box-shadow: $input-btn-focus-box-shadow !default;
@@ -1321,7 +1322,7 @@ $nav-tabs-link-active-border-color: var(--#{$prefix}border-color)
 
 $nav-pills-border-radius: var(--#{$prefix}border-radius) !default;
 $nav-pills-link-active-color: $component-active-color !default;
-$nav-pills-link-active-bg: $component-active-bg !default;
+$nav-pills-link-active-bg: $natural-90 !default; //$component-active-bg !default;
 
 $nav-underline-gap: 1rem !default;
 $nav-underline-border-width: 0.125rem !default;
@@ -1532,8 +1533,8 @@ $accordion-padding-x: 1.25rem !default;
 $accordion-color: var(--#{$prefix}body-color) !default;
 $accordion-bg: var(--#{$prefix}body-bg) !default;
 $accordion-border-width: var(--#{$prefix}border-width) !default;
-$accordion-border-color: var(--#{$prefix}border-color) !default;
-$accordion-border-radius: var(--#{$prefix}border-radius) !default;
+$accordion-border-color: $natural-85 !default; //var(--#{$prefix}border-color) !default;
+$accordion-border-radius: $border-radius-sm !default; //var(--#{$prefix}border-radius) !default;
 $accordion-inner-border-radius: subtract(
   $accordion-border-radius,
   $accordion-border-width
@@ -1544,22 +1545,22 @@ $accordion-body-padding-x: $accordion-padding-x !default;
 
 $accordion-button-padding-y: $accordion-padding-y !default;
 $accordion-button-padding-x: $accordion-padding-x !default;
-$accordion-button-color: var(--#{$prefix}body-color) !default;
+$accordion-button-color: $natural-50 !default; //var(--#{$prefix}body-color) !default;
 $accordion-button-bg: var(--#{$prefix}accordion-bg) !default;
 $accordion-transition: $btn-transition, border-radius 0.15s ease !default;
-$accordion-button-active-bg: var(--#{$prefix}primary-bg-subtle) !default;
-$accordion-button-active-color: var(--#{$prefix}primary-text-emphasis) !default;
+$accordion-button-active-bg: none !default; //var(--#{$prefix}primary-bg-subtle) !default;
+$accordion-button-active-color: $natural-50 !default; //var(--#{$prefix}primary-text-emphasis) !default;
 
 // fusv-disable
 $accordion-button-focus-border-color: $input-focus-border-color !default; // Deprecated in v5.3.3
 // fusv-enable
-$accordion-button-focus-box-shadow: $btn-focus-box-shadow !default;
+$accordion-button-focus-box-shadow: none !default; //$btn-focus-box-shadow !default;
 
 $accordion-icon-width: 1.25rem !default;
 $accordion-icon-color: $body-color !default;
-$accordion-icon-active-color: $primary-text-emphasis !default;
+$accordion-icon-active-color: $primary !default; //$primary-text-emphasis !default;
 $accordion-icon-transition: transform 0.2s ease-in-out !default;
-$accordion-icon-transform: rotate(-180deg) !default;
+$accordion-icon-transform: rotate(90deg) !default;
 
 $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$accordion-icon-color}' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>") !default;
 $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='#{$accordion-icon-active-color}' stroke-linecap='round' stroke-linejoin='round'><path d='M2 5L8 11L14 5'/></svg>") !default;

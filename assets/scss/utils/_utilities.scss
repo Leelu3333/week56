@@ -14,3 +14,8 @@ $utilities: map-merge(
 .chinese-trad {
   list-style-type: trad-chinese-informal;
 }
+@media (max-width: 992px) {
+  .mw-10 {
+    max-width: 10%;
+  }
+}

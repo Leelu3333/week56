@@ -39,3 +39,23 @@ var indexswiper = new Swiper(".index-Swiper", {
     },
   }
 });
+
+var swiper = new Swiper(".ServiceProcessSwiper", {
+      slidesPerView: 1.1,
+      spaceBetween: 24,
+      breakpoints: {
+    
+    // when window width is >= 576px
+    576: {
+      slidesPerView: 2,
+    },
+    // when window width is >= 768px
+    768: {
+      slidesPerView: 3,
+    },
+    // when window width is >= 992px
+    992: {
+      slidesPerView: 4,
+    }    
+  }
+});
