@@ -1,0 +1,46 @@
+.plan a {
+  width: fit-content;
+}
+.plan .card-label {
+  /* 加入預設隱形 border，避免 active 狀態產生區塊跳動問題 */
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.plan input[type='radio'] {
+  display: none;
+}
+.plan input[type='radio']:checked {
+  + .card-label {
+    border: 2px solid $secondary;
+    &:before {
+      content: 'HOT';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 14px;
+      font-weight: bold;
+      background-color: $secondary;
+      border-bottom-right-radius: 12px;
+      padding: 8px 16px;
+    }
+  }
+}
+
+.support-img {
+  background-image: url('https://raw.githubusercontent.com/hexschool/2022-web-layout-training/c07852c7f1c21031d6380bb4398e2163f71122c9/2025-week6/service/subscribe-3.svg');
+  background-repeat: no-repeat;
+  background-color: $secondary-90;
+  background-position: top right;
+  border: 2px solid $secondary;
+}
+
+.support-icon-img-left {
+  bottom: 0;
+}
+.support-icon-img-right {
+  right: 26px;
+  bottom: 0;
+}

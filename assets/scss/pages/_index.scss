@@ -39,16 +39,6 @@
   opacity: 1 !important;
 }
 
-.transition {
-  transition: opacity 0.3s ease;
-}
-.rounded-top-end {
-  border-top-right-radius: 12px;
-}
-.rounded-bottom-end {
-  border-bottom-right-radius: 12px;
-}
-
 /* 預設按鈕樣式：無底線 */
 .accordion-button {
   border-bottom: 0;
@@ -56,7 +46,7 @@
   outline: none;
 }
 .accordion-button:not(.collapsed) {
-  border-bottom: 1px dashed #ccc;
+  border-bottom: 1px dashed $natural-85;
 }
 
 @media (min-width: 1024px) {

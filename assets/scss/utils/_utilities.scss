@@ -14,6 +14,22 @@ $utilities: map-merge(
 .chinese-trad {
   list-style-type: trad-chinese-informal;
 }
+.transition {
+  transition: opacity 0.3s ease;
+}
+.rounded-top-end {
+  border-top-right-radius: 12px;
+}
+.rounded-bottom-end {
+  border-bottom-right-radius: 12px;
+}
+.w-120 {
+  width: 120px;
+}
+.w-300 {
+  width: 300px;
+}
+
 @media (max-width: 992px) {
   .mw-10 {
     max-width: 10%;

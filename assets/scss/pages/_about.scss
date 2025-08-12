@@ -7,25 +7,12 @@
 .banner-person-img {
   bottom: 0;
 }
-.w-120 {
-  width: 120px;
-}
-.ps-312 {
-  padding-left: 312px;
-}
 .swiper-slide {
   height: auto;
 }
-.bg-blue {
-  background-color: #4a69e8;
-}
-.text-team {
-  color: #4a69e8;
-}
 .border-bottom-dotted {
-  border-bottom: 1px dotted #ffffff; /* 可換顏色 */
+  border-bottom: 1px dotted $natural-85;
 }
-
 .text-mb-img {
   aspect-ratio: 3.2;
   overflow: hidden;
@@ -40,9 +27,7 @@
     object-fit: cover;
   }
 }
-.z-index-1 {
-  z-index: 1;
-}
+
 .bg {
   width: 100%;
   height: 280px;
@@ -64,6 +49,14 @@
 @media (max-width: 768px) {
   .map-img {
     aspect-ratio: 1.5;
+  }
+}
+@media (max-width: 992px) {
+  .bg {
+    width: 100%;
+    height: 200px;
+    z-index: 0;
+    bottom: 0;
   }
 }
 @media (max-width: 1024px) {
